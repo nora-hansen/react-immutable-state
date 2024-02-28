@@ -39,8 +39,6 @@ function App() {
 
   const regenerateWorkout = (workout) => {
     const newWorkout = generateWorkout()
-    console.log("Past ", workout)
-    console.log("Future ", newWorkout)
     const updatedWorkoutList = workouts.map(
       theWorkout => theWorkout === workout ? newWorkout : theWorkout
     )
